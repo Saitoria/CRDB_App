@@ -43,6 +43,7 @@ import {
 
 
 
+
     return(
         <View style={styles.mainContainer}>
 
@@ -52,6 +53,7 @@ import {
             <Text style={styles.userTxt}>Good Morning {'\n'} Glory</Text>
             <Image source={require('../resources/icons/message.png')} style={styles.usericonStyle}/>
         </View>
+<<<<<<< HEAD
 
         <View style={styles.headerContainer}>
             <View style={styles.headerReferrals}>
@@ -84,6 +86,8 @@ import {
                 style={styles.pinStyle}
             />
         </View>
+=======
+>>>>>>> 587491d (bnpl screen)
         </View>
 
 );
@@ -126,6 +130,7 @@ const styles = StyleSheet.create({
         right:'10%',
         
       },
+<<<<<<< HEAD
       headerContainer:{
         flexDirection:'row',
         width:'100%',
@@ -174,4 +179,6 @@ const styles = StyleSheet.create({
         marginVertical:'2%',
         marginHorizontal:'1%',
     },
+=======
+>>>>>>> 587491d (bnpl screen)
   });

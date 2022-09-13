@@ -13,6 +13,7 @@ import {
 import CustomButton from "../components/CustomButton";
 import CustomButton2 from "../components/CustomButton2";
 
+
 const apihandler =()=>{
     const url="https://crdb.zipa.tech/zipa-message/255712177151/Your CRDB referral Code is 2783. Please Share with Family Members and Friends to Earn Scores. Neccessary Steps are shown on your Refer and Earn Page. Thank you for using CRDB Services/"
     fetch(url).then((res)=>res.json)
@@ -20,6 +21,7 @@ const apihandler =()=>{
         alert('Your Referral Id has been sent to your Whatsapp Account')
 
     })}
+
 
   export default function SignUp({navigation})
   {
@@ -57,6 +59,7 @@ const apihandler =()=>{
             />
             <TextInput 
             placeholder="Nida No:"
+
             keyboardType='numeric'
             maxLength={20}
             placeholderTextColor={'black'}
@@ -75,7 +78,11 @@ const apihandler =()=>{
             
         
             <View style={styles.submitContainer}>
+
             <TouchableOpacity onPress={()=> apihandler()} style={styles.opacity1Container}>
+
+            <TouchableOpacity style={styles.opacity1Container}>
+
             <CustomButton title={'Create Account'}/>
             </TouchableOpacity>
 
@@ -135,9 +142,14 @@ const apihandler =()=>{
         flex:1,
         flexDirection:'row',
         justifyContent:'center',
+
         width:'100%',
         //position:'absolute',
         //top:'90%',
+
+        
+        width:'100%',
+
     },
     opacity1Container:{
         width:'30%',
@@ -156,11 +168,17 @@ const apihandler =()=>{
         alignSelf:'center',
     },
     txtInput:{
+
         color: 'black',
         borderBottomColor:'black',
         borderBottomWidth:1,
         width:'80%',
         height:'15%',
+
+        borderBottomColor:'black',
+        borderBottomWidth:1,
+        width:'80%',
+        height:'20%',
         //textAlign:'center',
         alignSelf:'center',
     }

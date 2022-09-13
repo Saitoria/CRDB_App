@@ -9,6 +9,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+
 import NewSchedule from './app/screens/newschedule';
 import Navigation from './app/navigations/Navigation';
 

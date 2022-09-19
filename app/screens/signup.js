@@ -13,15 +13,16 @@ import {
 import CustomButton from "../components/CustomButton";
 import CustomButton2 from "../components/CustomButton2";
 
+const apihandler =()=>{
+    const url="https://crdb.zipa.tech/zipa-message/255712177151/Your CRDB referral Code is 2783. Please Share with Family Members and Friends to Earn Scores. Neccessary Steps are shown on your Refer and Earn Page. Thank you for using CRDB Services/"
+    fetch(url).then((res)=>res.json)
+    .then((resJson)=>{
+        alert('Your Referral Id has been sent to your Whatsapp Account')
+
+    })}
+
   export default function SignUp({navigation})
   {
-    apihandler=()=>{
-        const url="https://crdb.zipa.tech/zipa-message/255712177151/Your CRDB referral Code is 2783/"
-        fetch(url).then((res)=>res.json)
-        .then((resJson)=>{
-            alert('Your Referral Id has been sent to your Whatsapp Account')
-    
-        })}
     return(
         <ScrollView style={{flex:1,width:'100%',}}>
         <View style={styles.mainContainer}>
@@ -74,7 +75,7 @@ import CustomButton2 from "../components/CustomButton2";
             
         
             <View style={styles.submitContainer}>
-            <TouchableOpacity onPress={apihandler()} style={styles.opacity1Container}>
+            <TouchableOpacity onPress={()=> apihandler()} style={styles.opacity1Container}>
             <CustomButton title={'Create Account'}/>
             </TouchableOpacity>
 
@@ -134,8 +135,9 @@ import CustomButton2 from "../components/CustomButton2";
         flex:1,
         flexDirection:'row',
         justifyContent:'center',
-        
         width:'100%',
+        //position:'absolute',
+        //top:'90%',
     },
     opacity1Container:{
         width:'30%',
@@ -158,7 +160,7 @@ import CustomButton2 from "../components/CustomButton2";
         borderBottomColor:'black',
         borderBottomWidth:1,
         width:'80%',
-        height:'20%',
+        height:'15%',
         //textAlign:'center',
         alignSelf:'center',
     }

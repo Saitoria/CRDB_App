@@ -6,7 +6,8 @@ import 'react-native-gesture-handler';
 import Home from '../screens/home';
 import Schedule from '../screens/schedule';
 import Earn from '../screens/earn';
-import BNPL from '../screens/bnpl';
+import Scores from '../screens/bnpl';
+import ScheduleNavigation from './ScheduleNavigation';
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigation()
@@ -48,7 +49,7 @@ export default function TabNavigation()
 
     <Tab.Screen
      name="Schedule"
-      component={Schedule}
+      component={ScheduleNavigation}
       options = {{
         tabBarIcon : ({size,focused,color}) => {
             return(
@@ -73,14 +74,14 @@ export default function TabNavigation()
     }}
        />
     <Tab.Screen 
-    name="BNPL"
-     component={BNPL} 
+    name="Scores"
+     component={Scores} 
      options = {{
         tabBarIcon : ({size,focused,color}) => {
             return(
                 <Image 
                 style={{width:size,height:size}}
-                source={require('../resources/icons/more.png')}/>
+                source={require('../resources/icons/bar-chart.png')}/>
             );
         }
     }}

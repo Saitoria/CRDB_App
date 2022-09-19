@@ -9,15 +9,12 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import Login from './app/screens/login';
-import SignUp from './app/screens/signup';
-import Home from './app/screens/home';
+import NewSchedule from './app/screens/newschedule';
 import Navigation from './app/navigations/Navigation';
 
 function App()  {
   return (
-    //<Login/>
-    //<Home/>
+    //<NewSchedule/>
     <Navigation/>
     
   );

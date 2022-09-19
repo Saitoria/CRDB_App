@@ -53,6 +53,9 @@ import {
 
         <View style={styles.footerContainer}>
             <TouchableOpacity
+            onPress={() => {
+              alert('Your Referral Code is 2783. Please Share with Friends and Family Members to Earn Scores');
+            }}
             style={styles.newScheduleBtn}
             >
             <CustomButton3 title={'Start Earning Now'}/>
@@ -105,7 +108,7 @@ const styles = StyleSheet.create({
       headerContainer:{
         width:'100%',
         height:'10%',
-        //backgroundColor:'blue',
+        //backgroundColor:'lightblue',
         position:'absolute',
         top:'12%',
         justifyContent:'center',
@@ -125,7 +128,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
       },
       footerContainer:{
-        //backgroundColor:'cyan',
+        //backgroundColor:'red',
         width:'100%',
         height:'10%',
         position:'absolute',

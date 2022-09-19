@@ -27,7 +27,7 @@ import {
 ];
 
 
-  export default function Schedule()
+  export default function Schedule({navigation})
   {
 
     const renderItem = ({item}) => (
@@ -64,6 +64,7 @@ import {
         <View style={styles.footerContainer}>
             <TouchableOpacity
             style={styles.newScheduleBtn}
+            onPress={()=>navigation.navigate('newschedule')}
             >
             <NewScheduleButton/>
             </TouchableOpacity>
